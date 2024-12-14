@@ -43,12 +43,12 @@ def fetch_pubmed_title_abstract(query, email, max_results=10):
     except Exception as e:
         return str(e)
 
-if __name__ == "__main__":
-    search_query = "math"
-    user_email = "your_email@example.com"
-    articles = fetch_pubmed_title_abstract(search_query, user_email, max_results=5)
+#if __name__ == "__main__":
+#    search_query = "math"
+#    user_email = "your_email@example.com"
+#    articles = fetch_pubmed_title_abstract(search_query, user_email, max_results=5)
 
-    for idx, article in enumerate(articles):
-        print(f"Article {idx + 1}:")
-        print(f"Title: {article['title']}")
-        print(f"Abstract: {article['abstract']}\n")
+#    for idx, article in enumerate(articles):
+#        print(f"Article {idx + 1}:")
+#        print(f"Title: {article['title']}")
+#        print(f"Abstract: {article['abstract']}\n")
